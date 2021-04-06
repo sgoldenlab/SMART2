@@ -1,8 +1,7 @@
 # Updates
 
 **Update 3-30-2021**
-- Duplicate cleanup bug fix
-- Forward warp bug fix
+- Bug fixes for registration loop, duplicate cleanup, and forward warp
 - Function to count segmented cells before and after duplicate cleanup - `cell_counter()`
 - Concatenation function to merge multiple datasets - `concatenate()`
 - Function to compile cell counts from multiple datasets into one document - `cell_count_compilation()`

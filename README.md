@@ -11,8 +11,7 @@ The first set of new features allows users to compile data from multiple SMART a
 The second set of new features enables users to conduct a voxel-based analysis (similar to other programs, like [ClearMap](http://christophkirst.github.io/ClearMap/build/html/index.html)). `voxelize()` generates a cell density map (saved as an .RData object, .csv file, and visual heatmap), and `voxel_stats()` runs statistical tests on these maps to determine group differences in cell density.
 
 ### New Features
-- Duplicate cleanup bug fix
-- Forward warp bug fix
+- Bug fixes in registration loop, duplicate cleanup, and forward warp
 - Function to count segmented cells before and after duplicate cleanup - `cell_counter()`
 - Concatenation function to merge multiple datasets - `concatenate()`
 - Function to compile cell counts from multiple datasets into one document - `cell_count_compilation()`

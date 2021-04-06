@@ -44,7 +44,7 @@ The SMART package was created with the novice programmer in mind and introduces 
 ## Resources 💾
 
 ### Wholebrain webpage
-- [Wholebrain by Daniel Furth](https:/http://www.wholebrainsoftware.org/) 🐭
+- [Wholebrain by Daniel Furth](https://www.wholebrainsoftware.org/) 🐭
 
 ### Open brain map
 - [Interactive open brain map](https://http://www.openbrainmap.org/#2/7345/5135) 🗺️

@@ -734,6 +734,8 @@ A sample output is below:
 <b>Sample Group Mean Heatmap</b>
 </p>
 
+### Note: To produce heatmaps that contain cells only belonging to one registration plate, run `isolate_dataset()` before `voxelize()`.
+
 ---
 
 `voxel_stats()` Runs statistical tests on voxel-based heatmaps. This function uses a two-tailed t-test at every point to determine group differences.

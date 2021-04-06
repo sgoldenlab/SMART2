@@ -18,7 +18,7 @@ For processing a wholebrain dataset, the pipeline is split into 6 sections. Thes
     internal reference atlas plates.
   - `brainmorph()` **(W)** Generate a brain morph plot.
   - `interpolate()` **(W)** Interpolate all AP and z numbers for
-    atlas plates in a whole brain project
+    atlas plates in a whole brain project.
 
 **Part 3: Registration**
 

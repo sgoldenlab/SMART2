@@ -23,7 +23,7 @@ For processing a wholebrain dataset, the pipeline is split into 6 sections. Thes
 **Part 3: Registration**
 
   - `registration2()` Console user interface built on top of
-    registration() function from the wholebrain package.
+    `registration()` function from the wholebrain package.
   - `regi_loop()` Automatically loops through the image
     registration process for the imaging dataset.
 

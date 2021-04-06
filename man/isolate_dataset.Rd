@@ -55,5 +55,8 @@ Returns \emph{isolated_dataset} a variable storing all cells retained from
 \emph{dataset}.
 }
 \description{
-put description here
+Isolate a user-specified subset of the forward warped dataset.
+The user may use any or all of the available parameters they choose to isolate
+their cells of interest. An explanation of the isolate_dataset() parameters is
+provided below
 }

@@ -736,6 +736,8 @@ A sample output is below:
 
 ### Note: To produce heatmaps that contain cells only belonging to one registration plate, run `isolate_dataset()` before `voxelize()`.
 
+### Note: The `resolution` argument can be modulated to increase heatmap precision.
+
 ---
 
 `voxel_stats()` Runs statistical tests on voxel-based heatmaps. This function uses a two-tailed t-test at every point to determine group differences.

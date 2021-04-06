@@ -1,5 +1,8 @@
 #' @title Selectively isolate forward-warped cells **(W)**.
-#' @description  put description here
+#' @description  Isolate a user-specified subset of the forward warped dataset.
+#' The user may use any or all of the available parameters they choose to isolate
+#' their cells of interest. An explanation of the isolate_dataset() parameters is
+#' provided below
 #' @param setup (required) Setup list from [setup_pl()].
 #' @param dataset (required) Dataset output from [forward_warp()].
 #' @param start_AP (optional, default = NULL) Most anterior AP to retain

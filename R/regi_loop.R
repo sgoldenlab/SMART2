@@ -95,7 +95,7 @@ regi_loop <- function(setup, filter = NULL, regis = NULL, plane = "coronal", clo
   } else {
     # If not auto loop, use registration improvement function for manual improvement
 
-    if (reference & length(setup) > 8 ) {
+    if (reference & length(setup) > 9 ) {
       # Register ONLY REFERENCE plates. Checks if project is whole brain project first
       # Store reference z and AP values as values to loop through
       loop_z  <- c(setup$first_z, setup$internal_ref_z ,setup$last_z)
@@ -199,7 +199,7 @@ regi_loop <- function(setup, filter = NULL, regis = NULL, plane = "coronal", clo
         image <- magick::image_annotate(image, paste0("Plate ", toString(platereturn(AP)),", AP ",
                                                       toString(round(AP, digits=2)), ", z ", toString(imnum)),
                                         gravity = gravity, size= font_size , color = font_col, location = font_location)
-        quartz(canvas="black", title= paste("z-slice ", toString(imnum)))
+        quartz()
         popup_cur <- dev.cur()
         plot(image)
 

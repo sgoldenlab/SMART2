@@ -18,7 +18,7 @@ SMART is easily installed from github using the devtools package:
 library(devtools) 
  
 # Install SMART
-install_github("mjin1812/SMART")
+install_github("sgoldenlab/SMART")
 
 # Load SMART
 library(SMART)

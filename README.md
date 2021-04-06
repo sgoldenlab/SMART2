@@ -1,4 +1,4 @@
-# SMART (Semi-Manual Alignment to Reference Templates)
+# SMART v1.1 (Semi-Manual Alignment to Reference Templates)
 
 **Pre-print: [SMART: An open source extension of WholeBrain for iDISCO+ LSFM intact mouse brain registration and segmentation](https://www.biorxiv.org/content/10.1101/727529v1)**
 

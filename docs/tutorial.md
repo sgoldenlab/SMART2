@@ -549,7 +549,7 @@ Following Step 10, there are no more steps in the pipeline. The remaining functi
 - **rois** (optional, default = c("grey")) Vector to specify regions of interest to retain cells from.
 
 ```diff
-isolated_dataset <- isolate_dataset(setup, dataset, start_AP = 1.71, end_AP = 1.81, hemisphere = "L", plates = c(2), mirror = FALSE, flip = FALSE, bounds = c("circle", 0, -4, 3), rois = c("CH"))
+isolated_dataset <- isolate_dataset(setup, dataset, start_AP = 1.71, end_AP = 1.61, hemisphere = "L", plates = c(2), mirror = FALSE, flip = FALSE, bounds = c("circle", 0, -4, 3), rois = c("CH"))
 ```
 
 ---

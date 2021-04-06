@@ -60,7 +60,7 @@ For processing a wholebrain dataset, the pipeline is split into 6 sections. Thes
 **Part 6. Aggregating data from multiple analyses**
 
   - `concatenate()` Combines datasets from multiple brains.
-  - `cell_count_compilation()` Compiles cell counts from
+  - `cell_count_compilation()` Compiles regional cell counts from
     multiple brains.
   - `get_groups()` Compiles group data from individual brains.
   - `voxelize()` Generate voxel-based heatmaps from multiple

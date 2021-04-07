@@ -1,8 +1,8 @@
-# SMART v1.1 (Semi-Manual Alignment to Reference Templates)
+# SMART v2.0 (Semi-Manual Alignment to Reference Templates)
 
 **Pre-print: [SMART: An open source extension of WholeBrain for iDISCO+ LSFM intact mouse brain registration and segmentation](https://www.biorxiv.org/content/10.1101/727529v1)**
 
-## Mar-30-2021: SMART version 1.1 release
+## Mar-30-2021: SMART version 2.0 release
 
 It's been a few years since the initial release of [SMART](https://github.com/mjin1812/SMART), and we have a few updates. First off, we've moved the repository from [Michelle's account](https://github.com/mjin1812/SMART) to here! We've also implemented some bug fixes and new features.
 

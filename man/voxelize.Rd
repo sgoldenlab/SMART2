@@ -14,6 +14,8 @@ voxelize(
   DV_bounds = c(-8, 1),
   detection_bounds = c(0.1, 0.1),
   resolution = 50,
+  ticks = 10,
+  display_bounds = NULL,
   heatmaps = TRUE,
   save = TRUE,
   output = NULL
@@ -43,6 +45,10 @@ detection square around each search point.}
 \item{resolution}{(optional, default = 50) Number of search points in each dimension,
 per millimeter (e.g. resolution 50 divides each square mm into a 50 x 50 grid with
 2,500 search points).}
+
+\item{ticks}{(optional, default = 10) Number of tick marks to show on scale.}
+
+\item{display_bounds}{(optional) Range of cell densities to display on heatmaps.}
 
 \item{heatmaps}{(optional, default = TRUE) Specify whether to output heatmaps.}
 

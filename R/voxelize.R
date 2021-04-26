@@ -154,9 +154,16 @@ voxelize <- function(brains_list = c(), data_list = c(), datasets = c(), groups_
         xlabels <- round(c(seq(ML_bounds[1], ML_bounds[2], by = 1)), digits = 1)
         ylabels <- round(c(seq(DV_bounds[1], DV_bounds[2], by = 1)), digits = 1)
 
-        if(display_bounds == NULL){
+        if(is.null(display_bounds)){
           display_bounds <- c(0, max(brain_matrices[[n]]))
         }
+
+        for(i in 1:length(brain_matrices[[n]])){
+          if(brain_matrices[[n]][i] > display_bounds[2]){
+            group_matrices[[n]][i] <- display_bounds[2]
+          }
+        }
+
         colorBreaks <- seq(display_bounds[1], display_bounds[2], length.out = ticks)
 
         heatmap_colorkey <- list(at = colorBreaks, labels = list(at = colorBreaks, labels = round(colorBreaks, 1)))

@@ -19,6 +19,8 @@
 #' @param resolution (optional, default = 50) Number of search points in each dimension,
 #' per millimeter (e.g. resolution 50 divides each square mm into a 50 x 50 grid with
 #' 2,500 search points).
+#' @param ticks (optional, default = 10) Number of tick marks to show on scale.
+#' @param display_bounds (optional) Range of cell densities to display on heatmaps.
 #' @param heatmaps (optional, default = TRUE) Specify whether to output heatmaps.
 #' @param save (optional, default = TRUE) Specify whether to save .csv files.
 #' @param output (required, default = NULL) Specify path to output folder to output
@@ -29,7 +31,7 @@
 #' @md
 
 voxelize <- function(brains_list = c(), data_list = c(), datasets = c(), groups_list = c(), groups = c(), ML_bounds = c(-5, 5), DV_bounds = c(-8, 1),
-                     detection_bounds = c(0.1, 0.1), resolution = 50, heatmaps = TRUE, save = TRUE, output = NULL){
+                     detection_bounds = c(0.1, 0.1), resolution = 50, ticks = 10, display_bounds = NULL, heatmaps = TRUE, save = TRUE, output = NULL){
 
   #create overarching matrix
 
@@ -152,15 +154,12 @@ voxelize <- function(brains_list = c(), data_list = c(), datasets = c(), groups_
         xlabels <- round(c(seq(ML_bounds[1], ML_bounds[2], by = 1)), digits = 1)
         ylabels <- round(c(seq(DV_bounds[1], DV_bounds[2], by = 1)), digits = 1)
 
-        colorBreaks <- seq(0, max(brain_matrices[[n]]), length.out = 20)
+        if(display_bounds == NULL){
+          display_bounds <- c(0, max(brain_matrices[[n]]))
+        }
+        colorBreaks <- seq(display_bounds[1], display_bounds[2], length.out = ticks)
 
         heatmap_colorkey <- list(at = colorBreaks, labels = list(at = colorBreaks, labels = round(colorBreaks, 1)))
-
-        for(z in 1:length(heatmap_colorkey$labels$labels)){
-          if((z - 1) %% 2 != 0){
-            heatmap_colorkey$labels$labels[z] <- ""
-          }
-        }
 
         # make and plot the plot
 

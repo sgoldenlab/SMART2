@@ -431,6 +431,8 @@ Below is an example of a registration before and after manual improvement:
 <b>After registration correction</b>
 </p>
 
+### Tip: When manually correcting registrations, do not remove all correspondence points - make sure at least one is always retained!
+
 ## Part 4: Segmentation, duplicate cleanup, & forward warping
 
 This section loops through all the images of the segmentation channel and automates the forward looping process. At the end of this section, you will have a mapped dataset!

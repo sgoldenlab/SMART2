@@ -68,6 +68,12 @@ voxel_stats <- function(input, group_matrices, groups = c(), ML_bounds = c(-5, 5
 
   heatmap_colorkey <- list(at = colorBreaks, labels = list(at = colorBreaks, labels = round(colorBreaks, 1)))
 
+  for(z in 1:length(heatmap_colorkey$labels$labels)){
+    if((z != 1) & (z != length(heatmap_colorkey$labels$labels))){
+      heatmap_colorkey$labels$labels[z] <- ""
+    }
+  }
+
   heatmap_plot <- lattice::levelplot(t(apply(stat_matrix, 2, rev)),
                                      col.regions = colorRampPalette(c("green", "white", "red"), space = "rgb"),
                                      scales = list(
@@ -91,7 +97,7 @@ voxel_stats <- function(input, group_matrices, groups = c(), ML_bounds = c(-5, 5
   # this code is to properly label the legend
 
   lattice::trellis.focus("legend", side="right", clipp.off=TRUE, highlight=FALSE) #legend parameters
-  grid.text(expression(cells/mm^3), 0.25, 0, hjust = 0.5, vjust = 1.5) #legend parameters and name
+  grid.text(expression( ), 0.25, 0, hjust = 0.5, vjust = 1.5) #legend parameters and name
   lattice::trellis.unfocus()
 
   # save the plot

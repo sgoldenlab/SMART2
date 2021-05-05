@@ -27,6 +27,8 @@ library(SMART)
 ?SMART
 ```
 
+### Note: if you have already installed an old version of SMART, run the following line of code before installing SMART: "remove.packages("SMART")"
+
 **Technical considerations and recommendations:**
 
 1) SMART and wholebrain should be installed on a computer with at least 16 GB of RAM. 8GB of RAM may be too low and crash R for some of the pipeline processes.

@@ -11,4 +11,4 @@ Because of issues we have encountered previously with spaces in Windows paths, w
 `C:\Users`
 
 Make sure that your user account folder contains **no spaces**, otherwise the path spaces may cause an error during the installation. 
-If you do have a space in your user folder, we suggest renaming your user account along with the user folder using these in-depth instructions: ![link here](https://www.repairwin.com/how-to-rename-user-and-user-folder-in-windows-7-8-10/). Alternatively, you can create an entirely new user account with administrative privileges for the purposes of this installation and pipeline usage (this will be entirely separate from your normal account which may be annoying).  
+If you do have a space in your user folder, we suggest renaming your user account along with the user folder using these in-depth instructions: [link here](https://www.repairwin.com/how-to-rename-user-and-user-folder-in-windows-7-8-10/). Alternatively, you can create an entirely new user account with administrative privileges for the purposes of this installation and pipeline usage (this will be entirely separate from your normal account which may be annoying).  

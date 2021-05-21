@@ -44,10 +44,19 @@ Please go to [this link](https://osf.io/fvbuh/) to download all the installation
 4.	Open Rstudio and run the following command, `devtools::install_github("r-lib/devtools")`
 5.	If it asks to install the latest update, choose `1. All`
 6.	Once  Rtools is installed, copy everything in C:\Rtools folder and make a folder name “usr” and paste all the files you copied into “usr”. Both the folders should look like the images below.
-7.	Set System Path To include R, Rtools, and FFTW. You will get the option to set the System Path from within the Rtools installer. Check the box. At the top of the list, it should list (add if not) the Rtools bin directories: 
+7.	Set System Path To include R, Rtools, and FFTW. 
 
-- C:\Rtools\bin 
-- C:\Rtools\mingw_64\bin 
-- C:\fftw 
-- C:\Program Files\R\R-3.5.2\bin\x64
+You will get the option to set the System Path from within the Rtools installer. Check the box. At the top of the list, it should list (add if not) the Rtools bin directories: 
+
+  - C:\Rtools\bin 
+  - C:\Rtools\mingw_64\bin 
+  - C:\fftw 
+  - C:\Program Files\R\R-3.5.2\bin\x64
+
+8.	To check compatibility of the devtools package with the Rtools installation, first restart your RStudio session to ensure the paths are updated in R; then run the command below in the console as a check. The output should be TRUE.
+`library(pkgbuild)`
+`find_rtools()`
+
+9.	Quit RStudio
+
 

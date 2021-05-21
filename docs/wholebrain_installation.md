@@ -71,8 +71,14 @@ Please go to [this link](https://osf.io/fvbuh/) to download all the installation
 
 5.	If it asks to install the latest update, choose `1. All`
 
+![](/images/rtools4.png)
 
-8.	Once  Rtools is installed, copy everything in C:\Rtools folder and make a folder name “usr” and paste all the files you copied into “usr”. Both the folders should look like the images below.
+6.	Once  Rtools is installed, copy everything in C:\Rtools folder and make a folder name “usr” and paste all the files you copied into “usr”. Both the folders should look like the images below.
+
+![](/images/rtools5.png)
+
+![](/images/rtools6.png)
+
 9.	Set System Path To include R, Rtools, and FFTW. 
 
 You will get the option to set the System Path from within the Rtools installer. Check the box. At the top of the list, it should list (add if not) the Rtools bin directories: 
@@ -91,7 +97,12 @@ You will get the option to set the System Path from within the Rtools installer.
 ## Install CMake -- version 3.8.0-rc2
 
 1.	Click on cmake-3.8.0-rc2-win64-x64.msi and Install to its default location. 
+
+![](/images/cmake.png)
+
 2.	Check the box to update the System PATH ("for all users".) It should add: 
+
+![](/images/cmake2.png)
 
 ## Install Wholebrain Part I: ROpenCVLite 
 
@@ -99,6 +110,9 @@ You will get the option to set the System Path from within the Rtools installer.
 2.	At the console, enter: `devtools::install_github("swarm-lab/ROpenCVLite", ref = "v0.3.410", INSTALL_opts="--no-multiarch")`
 3.	This will install the latest working version of ROpenCVLite. If you don’t set the “ref” variable, the development version may throw an error. The install options don't seem to matter but we can keep these original args in there. The package will install without directly installing OpenCV into your R package library. 
 4.  Run the line below in the console to install opencv: `ROpenCVLite::installOpenCV()`
+
+![](/images/cv1/png)
+
 5. It will ask the following question, `Select 1. Yes.`
 6. NOTE: The function above may generate interactive package update options from CRAN. If any of these updated packages are causing problems, we recommend skipping all package update options. It opencv should build successfully (it will require CMake be installed correctly.) We can now add the opencv path to the System PATH, now that opencv is installed. 
 7.	Quit RStudio. 

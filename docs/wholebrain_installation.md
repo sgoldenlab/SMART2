@@ -22,11 +22,19 @@ Please go to [this link](https://osf.io/fvbuh/) to download all the installation
 ### Install R --version 3.5.2
 
 1. Click on R-3.5.2-win.exe to install. Please install to the default path as shown below.
+
+![](/images/r35.png)
+
 2. Under Select Components, choose "64-bit User Installation." (Make sure to uncheck any files associated with the 32-bit installation!). Please make sure the settings are as shown as the image below.
+
+![](/images/r352.png)
 
 ## Install RStudio –version 1.1.463
 
 1.	Click on RStudio-1.1.463.exe and use the default destination folder path.
+
+![](/images/rs1.png)
+
 2.	Once RStudio is working, please install the devtools package from CRAN. 
 3.  Open RStudio and copy and paste the lines below to the console, then press “Enter” to run the command: 
 4.  Close RStudio.
@@ -34,18 +42,38 @@ Please go to [this link](https://osf.io/fvbuh/) to download all the installation
 ## Install FFTW --version 3.3.5
 
 1.	Copy the fftw folder into C: drive and add C:\fftw into your environment path.
+
+![](/images/fftw.png)
+
 2.	Add the LIB_FFTW Environment Variable to Windows, click on New.. and LIB_FFTW as the variable name and C:\fftw as the variable value.
+
+![](/images/fftw2.png)
+
 3.	Under Path, add new environment variable C:\fftw
+
+![](/images/fftw3.png)
 
 ## Install Rtools --version 3.5
 
 1.	Click on Rtools35.exe and install to the default folder path.
+
+![](/images/rtools1.png)
+
 2.	Under Select Components, choose "R toolset, Cygwin DLLs, and R 3.3.x + 64 bit toolchain" not 32-bit.
+
+![](/images/rtools2.png)
+
 3.	Check both checkboxes.
+
+![](/images/rtools3.png)
+
 4.	Open Rstudio and run the following command, `devtools::install_github("r-lib/devtools")`
+
 5.	If it asks to install the latest update, choose `1. All`
-6.	Once  Rtools is installed, copy everything in C:\Rtools folder and make a folder name “usr” and paste all the files you copied into “usr”. Both the folders should look like the images below.
-7.	Set System Path To include R, Rtools, and FFTW. 
+
+
+8.	Once  Rtools is installed, copy everything in C:\Rtools folder and make a folder name “usr” and paste all the files you copied into “usr”. Both the folders should look like the images below.
+9.	Set System Path To include R, Rtools, and FFTW. 
 
 You will get the option to set the System Path from within the Rtools installer. Check the box. At the top of the list, it should list (add if not) the Rtools bin directories: 
 

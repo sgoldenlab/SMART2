@@ -75,4 +75,31 @@ You will get the option to set the System Path from within the Rtools installer.
 6. NOTE: The function above may generate interactive package update options from CRAN. If any of these updated packages are causing problems, we recommend skipping all package update options. It opencv should build successfully (it will require CMake be installed correctly.) We can now add the opencv path to the System PATH, now that opencv is installed. 
 7.	Quit RStudio. 
 
+### Update System Path to include R and ROpenCVLite 
 
+1.	Open up environment variables and make sure the following Path contains all of the variables below, else add them.
+- C:\Rtools\bin 
+- C:\Rtools\mingw_64\bin 
+- C:\fftw 
+- C:\Program Files\R\R-3.5.2\bin\x64
+- C:\Users\TheGoldenLab\Documents\R\win-library\3.5\ROpenCVLite\opencv\x64\mingw\bin
+- C:\Program Files\CMake\bin
+
+## Install Wholebrain Part II: Wholebrain proper 
+1.	Make sure that you quit RStudio, since the system PATH has changed. Then start it up again. No need to save the workspace each time it asks, btw. 
+2.  Copy the command below into RStudio, `devtools::install_github("tractatus/wholebrain", args="--no-multiarch")`
+3.	It will probably ask you this question, select `3. None`
+
+## Test Wholebrain
+
+1.	Quit RStudio and then launch it again, so that you are testing a usual future post-install session with Wholebrain. 
+We can test using the same code the author provides in the original instructions: 
+
+`library(wholebrain) `
+
+`filename<-system.file('sample_tiles/rabiesEGFP.tif', package='wholebrain') `
+
+`output<-segment(filename)`
+
+2.	The most important is the first line: can you load the Wholebrain R library without any errors? If so it should be working! 
+3.	The next two lines will load a file and plot results. Hit the "q" key to close the figures and get output, which should be a two element list. The output as of version 0.1.35 is: `OUTPUT SEGMENTED CELLS: 248 `

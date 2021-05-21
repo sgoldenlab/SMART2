@@ -14,6 +14,7 @@ Make sure that your user account folder contains **no spaces**, otherwise the pa
 If you do have a space in your user folder, we suggest renaming your user account along with the user folder using these in-depth instructions: [link here](https://www.repairwin.com/how-to-rename-user-and-user-folder-in-windows-7-8-10/). Alternatively, you can create an entirely new user account with administrative privileges for the purposes of this installation and pipeline usage (this will be entirely separate from your normal account which may be annoying).  
 
 ## Installing Wholebrain on Windows 
+Please follow the steps from top to bottom. 
 
 ### Pre-installation step
 Please go to [this link](https://osf.io/fvbuh/) to download all the installation files needed for wholebrain.
@@ -58,5 +59,20 @@ You will get the option to set the System Path from within the Rtools installer.
 `find_rtools()`
 
 9.	Quit RStudio
+
+## Install CMake -- version 3.8.0-rc2
+
+1.	Click on cmake-3.8.0-rc2-win64-x64.msi and Install to its default location. 
+2.	Check the box to update the System PATH ("for all users".) It should add: 
+
+## Install Wholebrain Part I: ROpenCVLite 
+
+1.	Startup RStudio again. If it was running, quit it first. 
+2.	At the console, enter: `devtools::install_github("swarm-lab/ROpenCVLite", ref = "v0.3.410", INSTALL_opts="--no-multiarch")`
+3.	This will install the latest working version of ROpenCVLite. If you don’t set the “ref” variable, the development version may throw an error. The install options don't seem to matter but we can keep these original args in there. The package will install without directly installing OpenCV into your R package library. 
+4.  Run the line below in the console to install opencv: `ROpenCVLite::installOpenCV()`
+5. It will ask the following question, `Select 1. Yes.`
+6. NOTE: The function above may generate interactive package update options from CRAN. If any of these updated packages are causing problems, we recommend skipping all package update options. It opencv should build successfully (it will require CMake be installed correctly.) We can now add the opencv path to the System PATH, now that opencv is installed. 
+7.	Quit RStudio. 
 
 

@@ -103,3 +103,10 @@ We can test using the same code the author provides in the original instructions
 
 2.	The most important is the first line: can you load the Wholebrain R library without any errors? If so it should be working! 
 3.	The next two lines will load a file and plot results. Hit the "q" key to close the figures and get output, which should be a two element list. The output as of version 0.1.35 is: `OUTPUT SEGMENTED CELLS: 248 `
+
+# SMART Installation
+
+1. Close RStudio and open it again.
+2. Enter the command `library(devtools)`
+3. Enter the command `install_github("mjin1812/SMART")`
+4. Enter the command to load SMART to make sure it works. `library(SMART)`

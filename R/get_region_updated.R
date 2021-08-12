@@ -1,4 +1,4 @@
-function (acronym, registration) 
+get.region <- function (acronym, registration) 
 {
   coordinate <- registration$coordinate
   k <- which(abs(coordinate - atlasIndex$mm.from.bregma) == 

@@ -18,6 +18,7 @@ The second set of new features enables users to conduct a voxel-based analysis (
 - Function to calculate group data from multiple datasets - `get_groups()`
 - Voxelization function to allow users to run a voxel-based analysis, in addition to SMART's conventional region-based analysis, and generate cell density heatmaps - `voxelize()`
 - Function to run statistical tests on voxelized datasets - `voxel_stats()`
+- Function to batch-calculate areas of brain regions in a dataset- `region.area.loop()`
 
 ## What is SMART?
 

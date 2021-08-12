@@ -1,5 +1,9 @@
 # Updates
 
+**Update 8-11-2021**
+- Bug fix for `get.region()` function
+- Function to batch-calculate brain region areas for a project (default calculates area in microns^2 for 20x imaging)- `region.area.loop()`
+
 **Update 3-30-2021**
 - Bug fixes for registration loop, duplicate cleanup, and forward warp
 - Function to count segmented cells before and after duplicate cleanup - `cell_counter()`

@@ -12,13 +12,13 @@ The second set of new features enables users to conduct a voxel-based analysis (
 
 ### New Features
 - Bug fixes in registration loop, duplicate cleanup, and forward warp
+- Function to batch-calculate areas of brain regions in a dataset- `region.area.loop()`
 - Function to count segmented cells before and after duplicate cleanup - `cell_counter()`
 - Concatenation function to merge multiple datasets - `concatenate()`
 - Function to compile cell counts from multiple datasets into one document - `cell_count_compilation()`
 - Function to calculate group data from multiple datasets - `get_groups()`
 - Voxelization function to allow users to run a voxel-based analysis, in addition to SMART's conventional region-based analysis, and generate cell density heatmaps - `voxelize()`
 - Function to run statistical tests on voxelized datasets - `voxel_stats()`
-- Function to batch-calculate areas of brain regions in a dataset- `region.area.loop()`
 
 ## What is SMART?
 
